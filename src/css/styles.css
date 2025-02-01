@@ -48,3 +48,7 @@ body {
 .search-button:hover {
   background-color: #6888FF;
 }
+
+.loader {
+  display: none;
+}
