@@ -1,18 +1,50 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; /* Yatayda ortalar */
+    justify-content: center;
+}
+
+/* Arama kutusu stilleri */
+.search-input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover efekti */
+.search-input:hover {
+  border: 1px solid black;
+}
+
+/* Tıklama efekti (focus) */
+.search-input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+/* Buton stilleri */
+.search-button {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Hover efekti */
+.search-button:hover {
+  background-color: #6888FF;
+}
