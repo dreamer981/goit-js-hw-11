@@ -44,7 +44,7 @@ searchButton.addEventListener('click', () => {
   
         if (images.length === 0) {
           iziToast.error({
-            title: 'Hata',
+            title: 'Error',
             message: 'Sorry, there are no images matching your search query. Please try again!',
             position: 'topRight'
           });
